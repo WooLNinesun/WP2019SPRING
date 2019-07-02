@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO APP in pure JS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <div id="todo-app"></div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+<script>
+const todo = new TodoListApp({
+    container: document.getElementById('todo-app'),
+    items: []
+});
+
+/* for auto test */
+// for (let index = 0; index < 50; index++) {
+//     var start = new Date().getTime(); 
+//     while( true ) { if ((new Date().getTime() - start) > 1) { break; } }
+//     console.log(index);
+//     todo.items.add({
+//         content: String(index),
+//         isComplete: (Math.random() >= 0.5)
+//     });
+// }
+</script>
+</html>

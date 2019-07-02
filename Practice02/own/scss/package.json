@@ -1,0 +1,19 @@
+{
+  "name": "scss-complier",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.4.9",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node-sass -w styles.scss ../styles.css",
+    "build": "npm run build:sass && npm run build:prefixer",
+    "build:sass": "node-sass styles.scss ../styles.css",
+    "build:prefixer": "postcss ../styles.css --use autoprefixer -d ../"
+  },
+  "license": "MIT"
+}

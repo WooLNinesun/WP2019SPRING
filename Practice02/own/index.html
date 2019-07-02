@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <div id="ImageViewer" data-state="0"></div>
+</body>
+<script src="main.js"></script>
+<script>
+    const iv = new ImageViewer({
+        container: document.getElementById('ImageViewer'),
+        medias: [
+            {
+                type: 'image',
+                url: './images/pizza01.jpg'
+            },
+            {
+                type: 'image',
+                url: './images/pizza01.jpg'
+            },
+            {
+                type: 'image',
+                url: './images/pizza01.jpg'
+            },
+            {
+                type: 'youtube',
+                url: 'https://www.youtube.com/embed/BpsoSGlJZeE',
+                thumbnail: './images/youtube.png'
+            }
+        ]
+    });
+</script>
+</html>

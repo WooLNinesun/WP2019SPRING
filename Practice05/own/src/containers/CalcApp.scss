@@ -1,0 +1,14 @@
+/* layout */
+.calc-app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: sans-serif;
+}
+.calc-container {
+  width: 240px;
+  height: 444px;
+  margin: auto;
+  background-color: black;
+}

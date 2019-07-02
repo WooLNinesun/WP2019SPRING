@@ -1,0 +1,56 @@
+$btn-size : 60px;
+$btn-margin : 3px;
+
+.calc-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: $btn-size - 2 * $btn-margin;
+  margin: $btn-margin;
+  border-radius: $btn-size / 2;
+  border: 0px;
+
+  &:focus {
+    outline:0;
+  }
+}
+
+.calc-btn-width-x {
+  width: $btn-size - 2 * $btn-margin;
+}
+
+.calc-btn-width-2x {
+  width: 2 * $btn-size - 2 * $btn-margin;
+}
+
+
+.calc-number {
+  color: white;
+  background-color: #333333;
+
+  &:hover {
+    color: #333333;
+    background-color: white;
+  }
+}
+
+.calc-operator {
+  color: white;
+  background-color: #f58c00;
+
+  &:hover {
+    color: #f58c00;
+    background-color: white;
+  }
+}
+
+.calc-function {
+  color: black;
+  background-color: #A8A8A8;
+
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+}
